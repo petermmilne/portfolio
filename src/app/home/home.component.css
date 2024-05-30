@@ -1,0 +1,34 @@
+#home{
+    background-image: url('../assets/images/home-background.jpg') !important;
+    width: 100%;
+    height: 100vh;
+    background: top center;
+    background-size: cover;
+}
+
+#home p{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    display: block;
+}
+
+h1{
+    color: #fff; 
+}
+
+#home p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+}
+
+.name{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }

@@ -22,12 +22,21 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/app/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "src/custom-theme.scss",
+              "node_modules/aos/dist/aos.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/gsap/dist/gsap.min.js",
+              "node_modules/gsap/dist/ScrollTrigger.min.js",
+              "node_modules/aos/dist/aos.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"     
+            ]
           },
           "configurations": {
             "production": {
@@ -35,7 +44,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -81,7 +90,8 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images"
             ],
             "styles": [
               "src/styles.css"

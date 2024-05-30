@@ -1,0 +1,59 @@
+<section id="cv">
+    <div class="container">
+        <h2><strong>Professional Experience</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Recent Work Experience</strong></h4>
+                <ul class="timeline">
+                    <li *ngFor="let experience of experience;">
+                        <h5>{{experience.title}}</h5>
+                        <em>{{experience.company}}</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">{{experience.period}}</p>
+                            <button (click)="detailOnClick(experience)" type="button" class="btn btn-primary">
+                                <span *ngIf="!experience.detailIsDisplayed">+</span><span
+                                    *ngIf="experience.detailIsDisplayed">-</span>Detail</button>
+                        </div>
+                        <p *ngIf="experience.detailIsDisplayed">
+                            <span *ngFor="let acomplishment of experience.acomplishments;let index = index">
+                                <strong>{{index+1}}: </strong>{{acomplishment}} <br>
+                            </span>
+                            <strong>Technology:</strong> {{experience.technologies}}
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Previous Work Experience</strong></h4>
+                <ul class="timeline">
+                    <li *ngFor="let experienceprev of experienceprev;">
+                        <h5>{{experienceprev.title}}</h5>
+                        <em>{{experienceprev.company}}</em>
+                        <p>
+                            <strong>Technology:</strong> {{experienceprev.technologies}}
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Education</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5>Msc Information Engineering (Distinction)</h5>
+                        <em class="font-italic">The Robert Gordon University</em>
+                        <p class="year p-2 d-flex justify-content-center">2007 - 2008</p>
+                    </li>
+                    <li>
+                        <h5>Bsc (hons) Computer Science</h5>
+                        <em class="font-italic">The Robert Gordon University</em>
+                        <p class="year p-2 d-flex justify-content-center">1998 - 2001</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>

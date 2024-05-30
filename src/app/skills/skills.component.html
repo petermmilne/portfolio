@@ -1,0 +1,104 @@
+<section id="skills">
+    <div class="container">
+        <h2><strong>Skills</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row mt-2">
+            <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>Languages</strong></h5>
+                <div id="skillgraph">
+                    @for (language of skills.languages; track skills.language)
+                        {
+                    <div class='row skill-row'>
+                        <div class="label d-flex flex-row">
+                            <span class="skillLabel">{{language.name}}</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+                           
+                        </span>
+                    </div>
+                }
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>Frameworks & Libraries</strong></h5>
+                <div id="skillgraph" class="panel panel-default">
+                    @for (framework of skills.frameworks; track skills.framework)
+                        {
+                    <div class='row skill-row'>
+                        
+                        <div class="label d-flex flex-row">
+                            <span class='skillLabel'>{{framework.name}}</span>
+                        </div>
+                        <span class='skillData-Wrapper'></span>
+                    </div>
+                }
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>Databases</strong></h5>
+                <div id="skillgraph" class="panel panel-default">
+                    @for (database of skills.databases; track skills.databases)
+                    {
+                    <div class='row skill-row'>
+                        <div class="label d-flex flex-row">
+                            <span class='skillLabel'>{{database.name}}</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+
+                        </span>
+                    </div>
+                }
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>Cloud</strong></h5>
+                <div id="skillgraph">
+                    @for (cloud of skills.clouds; track skills.cloud)
+                        {
+                    <div class='row skill-row'>
+                        <div class="label d-flex flex-row">
+                            <span class="skillLabel">{{cloud.name}}</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+                           
+                        </span>
+                    </div>
+                }
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>Domains</strong></h5>
+                <div id="skillgraph">
+                    @for (domain of skills.domains; track skills.domains)
+                        {
+                    <div class='row skill-row'>
+                        <div class="label d-flex flex-row">
+                            <span class="skillLabel">{{domain.name}}</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+                           
+                        </span>
+                    </div>
+                }
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>Tools</strong></h5>
+                <div id="skillgraph">
+                    @for (tool of skills.tools; track skills.tools)
+                        {
+                    <div class='row skill-row'>
+                        <div class="label d-flex flex-row">
+                            <span class="skillLabel">{{tool.name}}</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+                           
+                        </span>
+                    </div>
+                }
+                </div>
+            </div>
+        </div>
+    </div>
